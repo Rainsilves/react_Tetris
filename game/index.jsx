@@ -64,10 +64,10 @@ var GameBox = React.createClass({
         }
     },changeMapping:function(){
         if(this.state.currentMap === "default"){
-                this.state.currentMap = "arrows";
-            }else{
-                this.state.currentMap = "default";
-            }
+            this.state.currentMap = "arrows";
+        }else{
+            this.state.currentMap = "default";
+        }
         this.state.keyMapping = this.state.keyMappings[this.state.currentMap];
     },
     pause: function(){
